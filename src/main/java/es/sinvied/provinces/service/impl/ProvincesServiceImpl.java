@@ -15,7 +15,19 @@ public class ProvincesServiceImpl implements ProvincesService {
         ProvinceDTO provinceDTO = new ProvinceDTO();
         provinceDTO.setName("Granada");
         provinceDTO.setCode("001");
+        ProvinceDTO provinceDTO2 = new ProvinceDTO();
+        provinceDTO2.setName("Madrid");
+        provinceDTO2.setCode("002");
+        ProvinceDTO provinceDTO3 = new ProvinceDTO();
+        provinceDTO3.setName("Barcelona");
+        provinceDTO3.setCode("003");
+        ProvinceDTO provinceDTO4 = new ProvinceDTO();
+        provinceDTO3.setName("Valencia");
+        provinceDTO3.setCode("004");
         provinceListDTO.setProvinces(Collections.singletonList(provinceDTO));
+        provinceListDTO.setProvinces(Collections.singletonList(provinceDTO2));
+        provinceListDTO.setProvinces(Collections.singletonList(provinceDTO3));
+        provinceListDTO.setProvinces(Collections.singletonList(provinceDTO4));
         return provinceListDTO;
     }
 
