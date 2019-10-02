@@ -13,7 +13,6 @@
     <artifactId>provinces</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>provinces</name>
     <description>Demo web project for SINVIED Project</description>
 
     <properties>
