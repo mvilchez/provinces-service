@@ -25,6 +25,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- Spring Boot Starter Actuator -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
         <!-- Spring Boot Starter Tomcat. Provided, only local profile -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -65,9 +70,9 @@
             <resource>
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
-                <includes>
-                    <include>*/**.properties</include>
-                </includes>
+                <excludes>
+                    <exclude>*/**.properties</exclude>
+                </excludes>
             </resource>
         </resources>
         <plugins>
