@@ -4,6 +4,17 @@ import es.sinvied.provinces.domain.ProvinceDTO;
 import es.sinvied.provinces.domain.ProvinceListDTO;
 
 public interface ProvincesService {
+    /**
+     * Returns all the provinces
+     *
+     * @return a ProvinceListDTO
+     */
     ProvinceListDTO getProvinces();
-    ProvinceDTO getProvince(String code);
+
+    /**
+     * Finds one province
+     *
+     * @return a ProvinceDTO
+     */
+    ProvinceDTO getProvince(Long code);
 }
